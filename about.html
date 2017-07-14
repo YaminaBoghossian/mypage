@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/896f46ebc9.js"></script>
+    <title>index</title>
+    <style>
+        @font-face {
+            font-family: "OldStandard-Regular";
+            src: url('fonts/OldStandard-Regular.ttf');
+        }
+        
+        @font-face {
+            font-family: "OldStandard-Italic";
+            src: url('fonts/OldStandard-Italic.ttf');
+        }
+        
+        @font-face {
+            font-family: "OldStandard-Bold";
+            src: url('fonts/OldStandard-Bold.ttf');
+        }
+        
+        @font-face {
+            font-family: "JuliusSansOne-Regular";
+            src: url('fonts/JuliusSansOne-Regular.ttf');
+        }
+        
+        body {
+            margin: 0;
+        }
+        /* Header FIXE qui ne bouge pas au scroll */
+        
+        header {
+            width: 100%;
+            background: rgba(254, 253, 253, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            padding: 5px;
+            padding-left: 5px;
+            padding-top: 0;
+            opacity: .8;
+            filter: alpha(opacity=80);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+            filter: progid: DXImageTransform.Microsoft.Shadow(color='#000000', Direction=200, Strength=12);
+            zoom: 1;
+        }
+        
+        h1 {
+            font-family: 'JuliusSansOne-Regular';
+            font-size: 2.5em;
+            color: #1E1E24;
+            text-align: center;
+            position: relative;
+            margin-bottom: 0;
+            margin-top: 40px;
+        }
+        
+        .about {
+            background: #eedecf;
+            width: 100%;
+            height: 800px;
+            margin-top: 150px
+        }
+        
+        .button {
+            width: 140px;
+            height: 45px;
+            font-family: 'OldStandard-Bold', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: white;
+            background-color: #102f2d;
+            border: 1px solid #102f2d;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            margin-left: 0px;
+            margin-top: 40px
+        }
+        
+        .button:hover {
+            background-color: rgba(238, 222, 207, 0);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+            color: #1E1E24;
+            transform: translateY(-7px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Yamina Boghossian </h1>
+
+
+        <br/>
+        <hr size=2 align=center width="20%">
+    </header>
+    <div class='about'>
+        <p> I am a Lyon-based developer student who is currently studying at SIMPLON in Lyon (France).<br/> I love art and design in general and always have growing up. Younger, I was attracted by computers and design, trying to make websites and having fun
+            making blogs . I am currently learning PHP and SQL but also learnt JavaScript, Html, CSS, JQuery, Bootstrap, UX design, SASS...<br/> I love what I do and can't wait to learn more and more everyday!
+            <br/> <br/> I WOULD LOVE TO HEAR FROM YOU. PLEASE GET IN TOUCH FOR A CHAT.
+
+        </p>
+        <button class="button">Return</button>
+
+    </div <div class='cv'> </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
