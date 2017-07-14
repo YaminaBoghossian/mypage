@@ -69,7 +69,8 @@
             font-weight: normal;
             margin: 0;
         }
-        
+/* PREMIERE SECTION INTRO */
+
         .introduction {
             width: 100%;
             height: 400px;
@@ -119,8 +120,9 @@
             font-weight: normal;
             margin-bottom: 10px;
         }
-        
-        .portfolio {
+    /*SECTION PORTFOLIO ----- todo -- RESPONSIVE A REVOIR */
+
+ .portfolio {
             width: 100%;
             height: 400px;
             background: white;
@@ -129,10 +131,78 @@
             flex-direction: row;
             justify-content: space-around;
             margin: auto;
-
-           
         }
 
+ .screenprojet {
+    width: 82%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    
+    
+}
+
+.screenprojet :hover{
+    opacity: 0;
+    
+    
+}
+
+  
+h4 {
+    font-family: "JuliusSansOne-Regular";
+    font-size: 1.5em;
+    color: white;
+    text-align : center;
+    
+    margin: auto;
+    
+}
+
+
+img {
+    width: 100%;
+    height: 200px;
+    position:relative;
+     z-index: 6;
+    
+}
+
+
+
+.details {
+   /* background:
+
+#62dd1d;*/
+/*#bcf871;*/
+background:#7DDF64;
+    /*background:#ff8a65;*/
+    opacity: 0.8;
+    width: 24.8%;
+    margin-top: 62px;
+    margin:auto;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+h8 {
+    font-family:"SourceSansPro-Light";
+    color:#102f2d;
+    font-size:0.9em ;
+    margin-left: 5px;
+    margin: auto;
+    
+    
+}
+
+hr {
+    color: #102f2d;
+    background: white;
+}
 
 
         /* FOOTER #1 CONTACT */
@@ -207,77 +277,8 @@
             margin: auto;
         }
 
-
-    .screenprojet {
-    width: 82%;
-    height: 300px;
-    margin: auto;
-    text-align: center;
-    margin-top: 150px;
-    
-    
-}
-
-.screenprojet :hover{
-    opacity: 0;
-    
-    
-}
-
-  
-h4 {
-    font-family: "JuliusSansOne-Regular";
-    font-size: 1.5em;
-    color: white;
-    text-align : center;
-    
-    margin: auto;
-    
-}
-
-
-img {
-    width: 100%;
-    height: 200px;
-    position:relative;
-     z-index: 6;
-    
-}
-
-
-
-.details {
-   /* background:
-
-#62dd1d;*/
-/*#bcf871;*/
-background:#7DDF64;
-    /*background:#ff8a65;*/
-    opacity: 0.8;
-    width: 24.8%;
-    margin-top: 62px;
-    margin:auto;
-    height: 200px;
-    position: absolute;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
-}
-h8 {
-    font-family:"SourceSansPro-Light";
-    color:#102f2d;
-    font-size:0.9em ;
-    margin-left: 5px;
-    margin: auto;
-    
-    
-}
-
-hr {
-    color: #102f2d;
-    background: white;
-}
+/* FLECHE BACK TO TOP -- todo INSERER LE CODE JQUERY pour que la fleche 
+disparaisse en haut */
 
 .back-to-top{
   font-weight: bold;
@@ -325,6 +326,7 @@ grey;
   visibility: visible;
   opacity: 1;
 }
+/* POP UP ABOUT - TODO -- A TERMINER */
 
 .popup {
 margin: 80px auto;
@@ -372,6 +374,8 @@ margin: 80px auto;
   word-spacing: 3px;
 }
 
+/* RESPONSIVE TODO -- A APPLIQUER POUR TOUT */
+
 @media screen and (max-width: 700px){
   .box{
     width: 70%;
@@ -381,10 +385,9 @@ margin: 80px auto;
   }
 }
 
-/* divs background appearing with hover */ 
-
 
     </style>
+    
 </head>
 
 <body>
