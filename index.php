@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://use.fontawesome.com/896f46ebc9.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>index</title>
+    
     <style>
         @font-face {
-            font-family: 'SourceSansPro-ExtraLight';
-            src: url('font/SourceSansPro-ExtraLight.ttf');
+            font-family: 'Roboto-Medium';
+            src: url('font/Roboto-Medium.ttf');
         }
         
         @font-face {
-            font-family: "OldStandard-Regular";
-            src: url('fonts/OldStandard-Regular.ttf');
+            font-family: "Roboto-Light";
+            src: url('fonts/Roboto-Light.ttf');
         }
         
         @font-face {
-            font-family: "OldStandard-Bold";
-            src: url('fonts/OldStandard-Bold.ttf');
+            font-family: "Roboto-Regular";
+            src: url('fonts/Roboto-Regular.ttf');
         }
         
         @font-face {
@@ -62,7 +64,7 @@
         }
         
         h6 {
-            font-family: 'SourceSansPro-ExtraLight';
+            font-family: 'Roboto-Light';
             font-size: 20px;
             color: #FF5E83;
             text-align: center;
@@ -92,11 +94,11 @@
         .btn {
             width: 140px;
             height: 45px;
-            font-family: 'OldStandard-Bold', sans-serif;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            font-weight: 500;
+            font-family: 'Roboto-Light';
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.3px;
+            
             color: white;
             background-color: #102f2d;
             border: 1px solid #102f2d;
@@ -114,7 +116,7 @@
         }
         
         h5 {
-            font-family: 'OldStandard-Regular', sans-serif;
+            font-family: 'Roboto-Light';
             color: #102f2d;
             font-size: 1.2em;
             font-weight: normal;
@@ -172,12 +174,7 @@ img {
 
 
 .details {
-   /* background:
-
-#62dd1d;*/
-/*#bcf871;*/
-background:#7DDF64;
-    /*background:#ff8a65;*/
+   background:rgba(182,165,149,0.9);
     opacity: 0.8;
     width: 24.8%;
     margin-top: 62px;
@@ -190,7 +187,7 @@ background:#7DDF64;
     flex-direction: column;
 }
 h8 {
-    font-family:"SourceSansPro-Light";
+    font-family:"Roboto-Light";
     color:#102f2d;
     font-size:0.9em ;
     margin-left: 5px;
@@ -228,7 +225,7 @@ hr {
         i {
             font-size: 2em;
             text-align: center;
-            color: #102f2d;
+            color:#102f2d ;
         }
         
         a :hover {
@@ -250,7 +247,7 @@ hr {
         }
         
         span {
-            font-family: 'OldStandard-Regular';
+            font-family: 'Roboto-Medium';
         }
         
         a {
@@ -271,7 +268,7 @@ hr {
         }
         
         .plilfooter {
-            font-family: 'SourceSansPro-Light';
+            font-family: 'Roboto-Light';
             font-size: 1em;
             color: white;
             margin: auto;
@@ -329,27 +326,30 @@ grey;
 /* POP UP ABOUT - TODO -- A TERMINER */
 
 .popup {
-margin: 80px auto;
-  
-  background: grey ;
-  
-  
+margin: 50px auto;
+  background: rgba(254,253,253,0.9);
+    box-shadow: 0px 1px 10px rgba(255,255,255,0.5);
   width: 80%;
-  height: 400px;
+  height: 450px;
   position: relative;
   transition: all 5s ease-in-out;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 35px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+  z-index: 6;
   
   
 }
 
 .popup h2 {
-  margin-top: 20px;
-  color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: rgba(182,165,149,0.9);
+  font-weight: bold;
   font-family: "JuliusSansOne-Regular";
+  font-size: 2em;
   
 }
 .popup .close {
@@ -360,36 +360,120 @@ margin: 80px auto;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #102f2d;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color:rgb(216, 28, 138);
 }
 .popup .content {
   max-height: 90%;
   overflow: auto;
-  color: white;
-  font-family: 'SourceSansPro-Light';
+  color: #102f2d;
+  font-family: 'Roboto-Light';
   letter-spacing: 2px;
   word-spacing: 3px;
 }
 
+.lang {
+    font-family: 'Roboto-Medium';
+    font-size: 1.3em;
+}
+h9{
+    text-align: center;
+    color: #102f2d ;
+    font-family: 'JuliusSansOne-Regular';
+    font-size: 1.5em;
+margin: auto;
+    
+}
+
+.contactmail {
+    text-align: center;
+  color: rgba(182,165,149,1);
+    font-family: 'Roboto-Light';
+    font-size: 0.8em;
+    margin: auto;
+}
+
 /* RESPONSIVE TODO -- A APPLIQUER POUR TOUT */
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
   .box{
     width: 70%;
   }
   .popup{
     width: 70%;
   }
+
+  img {
+    width: 100%;
+    height: 100px;
+
+}
+.screenprojet {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+
+}
+.portfolio {
+            width: 100%;
+            height: 400px;
+            background: white;
+            margin-bottom: 220px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+ 
+.details {
+   background:rgba(182,165,149,0.9);
+    opacity: 0.8;
+    width: 30%;
+    margin-top: 62px;
+    margin:auto;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h4 {
+    font-family: "JuliusSansOne-Regular";
+    font-size: 0.3em;
+    color: white;
+    text-align : center;
+    
+    margin: auto;
+    
+}
+
+
 }
 
 
     </style>
-    
+    <script> // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('.back-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('.back-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('.back-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+</script>
 </head>
-
 <body>
     <header>
         <h1> Yamina Boghossian </h1>
@@ -401,38 +485,52 @@ margin: 80px auto;
         <h3> Welcome to my page </h3>
         <h5>Here's an outlook of my work as a developper student in Lyon, France.</h5>
 <div class="box">
-	 <a href="#popup1"><button class="btn">About</button></a>
+	 <a href="#popup1"><button class="btn">ABOUT</button></a>
 </div>
 
 <div id="popup1" class="overlay">
            
 	<div class="popup">
-		<h2>Skills </h2>
+       
+		<h9>I would Love to hear from you, please get in touch for a chat!</br><span class='contactmail'>
+        (0033) 6 62 51 46 48 ---- Yamina.boghossian@gmail.com</span>
+        </h9>
+        </br></br>
+        
 
 		<a class="close" href="#">&times;</a>
         
 		<div class="content">
-            Front-End <br/>
+            <h2> Skills </h2>
+            <hr size=2 align=center width="90%">
+            </br></br>
+           <span class='lang'> Front-end <br/></span>
+            
             HTML - CSS - SASS - JAVASCRIPT - JQUERY - UX DESIGN - BOOTSTRAP<br/><br/>
-            Back-End <br/>
+            <span class= 'lang'> Back-end <br/> </span>
             PHP - SQL
-            <br/><br/><br/>
+            <br/></br>
+            <span class='lang'> Fluent </span> English and French </br></br></br>
         <h2> Experience </h2>
+        <hr size=2 align=center width="90%">
+        <br/></br>
         <div class='content'>
-            High school diploma in literature and English <br/>
-            <br/>Studied 2 years in Marketing / Advertising / Management<br/>
-            Commercial background +6 years (sales assistance, mershandising ) <br/>
-            Food and beverage +5 years 
-            Lorem ipsum dolor sit amet, consectetur 
-            adipisicing elit. Magni fuga nam dolores numquam delectus dignissimos 
-            voluptas iste molestias amet tempore cupiditate sint, deserunt iusto provident, animi itaque natus harum. Similique.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sit possimus nulla laboriosam sapiente, dolorem, rem voluptatibus esse neque sed atque ipsam quam architecto perferendis veritatis et, ab minima exercitationem.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet soluta, tempore rerum nulla. Laudantium quidem, voluptate consectetur eaque quia, hic in atque facere, voluptas quo tenetur accusantium dolor dolore iste.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsam omnis soluta veniam, provident praesentium reiciendis velit, vero amet consequatur repudiandae tempore laudantium quasi. Necessitatibus quam inventore dignissimos, corrupti hic.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nesciunt dolores animi autem assumenda optio sit unde officiis et dolor, impedit maxime nisi aperiam explicabo eveniet asperiores, expedita sapiente sed.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem provident fuga adipisci odio porro eaque excepturi voluptates sed molestiae reprehenderit. Cum aliquid exercitationem aliquam obcaecati veniam animi earum, laudantium inventore?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero a alias deleniti dolorem. Explicabo rem exercitationem temporibus, ex sed placeat natus molestias adipisci. Temporibus eum sapiente sunt nobis impedit modi!
+            High school diploma in <span class ='lang'>Literature</span> and <span class='lang'>English </span><br/>
+            <br/>Studied 2 years of Marketing / Advertising / Management<br/></br>
+            <span class ='lang'>Commercial background </span> +6 years  <br/>
+            <span class ='lang'>Food and beverages </span> +5 years 
+            
             </div>
+            </br></br></br>
+        <h2> Hobbies </h2>
+        <hr size=2 align=center width="90%">
+        <br/></br>
+        <div class='content'>
+        Drawing - Painting - Photography - Webdesign - Music - Travel 
+        </br></br>
+         </br>
+        </div>
+        
          
     
 			
@@ -478,7 +576,7 @@ $dossier ="./";
 
         <div class='social'>
             <a href='https://github.com/YaminaBoghossian'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            <a href='https://www.linkedin.com/in/yamina-boghossian-201365147/'><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
             <a href='https://plus.google.com/u/0/112488329816032298961'><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
             <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
         </div>
