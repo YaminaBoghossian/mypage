@@ -89,6 +89,7 @@
             font-family: 'JuliusSansOne-Regular';
             font-size: 1.5em;
             font-weight: bold;
+          
         }
         
         .btn {
@@ -98,14 +99,14 @@
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 1.3px;
-            
+            margin: auto;
             color: white;
             background-color: #102f2d;
             border: 1px solid #102f2d;
             transition: all 0.3s ease 0s;
             cursor: pointer;
-            margin-left: 0px;
-            margin-top: 40px
+            margin-top:20px;
+            
         }
         
         .btn:hover {
@@ -397,7 +398,7 @@ margin: auto;
 
 /* RESPONSIVE TODO -- A APPLIQUER POUR TOUT */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
   .box{
     width: 70%;
   }
@@ -422,14 +423,61 @@ margin: auto;
             width: 100%;
             height: 400px;
             background: white;
-            margin-bottom: 220px;
+            
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-around;
-            margin: auto;
+            
         }
 
- 
+.introduction {
+            width: 100%;
+            
+            background: #eedecf;
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+ h3 {
+            color: #102f2d;
+            font-family: 'JuliusSansOne-Regular';
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 15px;
+          
+        }
+
+        h5 {
+            font-family: 'Roboto-Light';
+            color: #102f2d;
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .btn {
+            width: 140px;
+            height: 45px;
+            font-family: 'Roboto-Light';
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.3px;
+            
+            margin-left: 25%;
+            color: white;
+            background-color: #102f2d;
+            border: 1px solid #102f2d;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            margin-top:20px;
+          
+            
+            
+        }
+
 .details {
    background:rgba(182,165,149,0.9);
     opacity: 0.8;
@@ -453,11 +501,224 @@ h4 {
     margin: auto;
     
 }
-
-
+ .social {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            margin: auto;
+            width: 20%;
+            margin-bottom: 5px;
+        }
+        
+i {
+            font-size: 2em;
+            text-align: center;
+            color:#102f2d ;
+            margin-left: 10px;
+        }
 }
 
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300);
+        @import url(https://fonts.googleapis.com/css?family=Zeyada);
+        .col-xs-1,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12,
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12 {
+            position: relative;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        #accueil {
+            background: url(http://images.forwallpaper.com/files/thumbs/preview/20/205186__photo-close-up-snow-leaves-blur-bokeh-background-wallpaper_p.jpg) no-repeat center;
+            background-size: cover;
+            margin-top: 50px;
+            height: 500px;
+            height: 100%;
+        }
+        
+        #accueil h1 {
+            position: relative;
+            top: 120px;
+            font-size: 10em;
+            font-family: "Zeyada";
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+        #accueil h2 {
+            position: relative;
+            top: 150px;
+            text-align: center;
+            font-size: 3em;
+            font-family: "Zeyada";
+            text-transform: uppercase;
+            color: #fff;
+        }
+        
+        #gallery {
+            height: 100%;
+            width: 100%;
+        }
+        
+        figure {
+            height: 450px;
+            width: 30%;
+            display: block;
+            overflow: hidden;
+            z-index: 100;
+        }
+        
+        figcaption {
+            height: 150px;
+            width: 100%;
+            background: no-repeat center 50px black;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            left: -500px;
+            opacity: 0;
+            padding: 5px;
+            
+        }
+        
+        a {
+            color: #fff;
+        }
+        
+        a:hover figcaption {
+            opacity: 0.8;
+            left: 0;
+            color: #fff;
+            transition: all 0.7s;
+            
+        }
+        
+        #contact {
+            height: 100%;
+            padding: 20px;
+            margin-top: -50px;
+            background: url(http://images.forwallpaper.com/files/thumbs/preview/20/205186__photo-close-up-snow-leaves-blur-bokeh-background-wallpaper_p.jpg) no-repeat center;
+            background-size: cover;
+            overflow: hidden;
+        }
+        
+        #contact h1 {
+            font-family: "Zeyada";
+            font-size: 10em;
+            text-align: center;
+            color: #fff;
+        }
+        
+        input {
+            height: 50px;
+            color: #fff;
+        }
+        
+        .form-control {
+            color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+            border: none;
+            border-radius: 0;
+            background: rgba(255, 255, 255, 0.4);
+            resize: none;
+        }
+        
+        .submit {
+            display: block;
+            margin: 0 auto;
+            background: #34495e;
+            border-radius: 0;
+            border: none;
+            color: #fff;
+        }
+        
+        .btn-default:hover {
+            background: #2c3e50;
+            color: #fff;
+        }
+        
+        @media (max-width: 750px) {
+            #accueil h1,
+            #contact h1 {
+                font-size: 4.6em;
+            }
 
+            figure {
+            height: 450px;
+            width: 50%;
+            display: block;
+            overflow: hidden;
+            z-index: 100;
+            margin: auto;
+        }
+        
+        figcaption {
+            height: 250px;
+            width: 100%;
+            background: no-repeat center 50px black;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: -500px;
+            opacity: 0;
+            padding: 5px;
+        
+        }
+
+        
+        }
     </style>
     <script> // ===== Scroll to Top ==== 
 $(window).scroll(function() {
@@ -515,6 +776,7 @@ $('.back-to-top').click(function() {      // When arrow is clicked
         <hr size=2 align=center width="90%">
         <br/></br>
         <div class='content'>
+        Currently studying web development at Simplon, Lyon.</br></br>
             High school diploma in <span class ='lang'>Literature</span> and <span class='lang'>English </span><br/>
             <br/>Studied 2 years of Marketing / Advertising / Management<br/></br>
             <span class ='lang'>Commercial background </span> +6 years  <br/>
@@ -540,6 +802,10 @@ $('.back-to-top').click(function() {      // When arrow is clicked
         
 
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/><br/></br>
     <div class='portfolio'>
 <?php
 $dossier ="./";
@@ -561,12 +827,16 @@ $dossier ="./";
           if(is_file($screen)){
    echo '<a href="'.$file.'">
     
-       <div class="screenprojet"> 
-       <div class="details"><h4>'.$title.' </h4>
-<hr size=1 align=center width="10%">
-        <h8>'.$comment.'</h8> </div>
-       <img src="'.$screen.'"> </div>
-   </a>';
+       <figure class="col-md-3 col-sm-3 col-xs-12 ">
+            <a href="'.$file.'">
+                <img class="img" src="'.$screen.'" alt="" />
+                <figcaption>
+                    <h2>'.$title.'</h2>
+                    <p>'.$comment.'</p>
+                </figcaption>
+            </a>
+        </figure>';
+        
 
           };
        }}
