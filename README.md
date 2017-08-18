@@ -1,2 +1,2 @@
 # mypage
-My portfolio page 
+My portfolio page with HTML/CSS , PHP, and a bit of BOOTSTRAP.
