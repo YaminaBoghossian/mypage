@@ -51,6 +51,8 @@
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
             filter: progid: DXImageTransform.Microsoft.Shadow(color='#000000', Direction=200, Strength=12);
             zoom: 1;
+            z-index: 800;
+           
         }
         
         h1 {
@@ -127,13 +129,20 @@
 
  .portfolio {
             width: 100%;
-            height: 400px;
             background: white;
-            margin-bottom: 220px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
+            flex-wrap: wrap;
             margin: auto;
+            z-index: 0;
+        }
+     
+        figure {
+            height: 150px;
+            width: 30%;
+            display: block;
+            overflow: hidden;
+            opacity:0.99;
         }
 
  .screenprojet {
@@ -141,16 +150,17 @@
     height: 300px;
     margin: auto;
     text-align: center;
-    margin-top: 150px;
+   
+    
     
     
 }
 
-.screenprojet :hover{
+/*.screenprojet :hover{
     opacity: 0;
     
     
-}
+}*/
 
   
 h4 {
@@ -167,21 +177,26 @@ h4 {
 img {
     width: 100%;
     height: 200px;
-    position:relative;
      z-index: 6;
     
 }
 
-
+.proj {
+    height:200px;
+}
+.proj: hover {
+    color:blue;
+}
 
 .details {
    background:rgba(182,165,149,0.9);
     opacity: 0.8;
     width: 24.8%;
-    margin-top: 62px;
-    margin:auto;
+    margin-top: -362px;*/
+   margin:auto;
     height: 200px;
     position: absolute;
+    
     display: flex;
     align-items:center;
     justify-content: center;
@@ -323,6 +338,7 @@ grey;
 .overlay:target {
   visibility: visible;
   opacity: 1;
+  z-index:800;
 }
 /* POP UP ABOUT - TODO -- A TERMINER */
 
@@ -339,7 +355,7 @@ margin: 50px auto;
   padding-top: 35px;
   padding-bottom: 80px;
   text-align: center;
-  z-index: 6;
+  z-index: 1000;
   
   
 }
@@ -418,15 +434,16 @@ margin: auto;
     text-align: center;
     margin-top: 150px;
 
-}
-.portfolio {
+} 
+.figure{
             width: 100%;
             height: 400px;
             background: white;
-            
+            margin-bottom: 25px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
+            
             
         }
 
@@ -712,6 +729,7 @@ i {
             position: absolute;
             bottom: 0;
             left: -500px;
+            top: -300px;
             opacity: 0;
             padding: 5px;
         
@@ -827,7 +845,7 @@ $dossier ="./";
           if(is_file($screen)){
    echo '<a href="'.$file.'">
     
-       <figure class="col-md-3 col-sm-3 col-xs-12 ">
+       <figure class="col-md-3 col-sm-3 col-xs-12 proj">
             <a href="'.$file.'">
                 <img class="img" src="'.$screen.'" alt="" />
                 <figcaption>
